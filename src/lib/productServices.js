@@ -1,4 +1,4 @@
-const baseUrl = 'http://5d479f42992ea9001444c91f.mockapi.io/products'
+const baseUrl = 'https://5d479f42992ea9001444c91f.mockapi.io/products'
 // const baseUrl = 'http://localhost:8080/products'
 //REACT_APP_BASE_URL=https://fahrandeen.github.io/myapp0107/products
 //"homepage": "https://fahrandeen.github.io/myapp0107",
