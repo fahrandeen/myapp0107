@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "48",
+      "productName": "productName 48",
+      "price": 85,
+      "uom": "uom 48",
+      "dateCreated": 1564978232,
+      "isActive": false
+    },
+    {
+      "id": "49",
+      "productName": "productName 49",
+      "price": 66,
+      "uom": "uom 49",
+      "dateCreated": 1564978172,
+      "isActive": false
+    },
+    {
+      "id": "51",
+      "productName": "productName 51",
+      "price": 90,
+      "uom": "uom 51",
+      "dateCreated": 1564978052,
+      "isActive": false
+    }
+  ]
+}
