@@ -8,16 +8,10 @@ import { fetchProducts, toggleProduct, deleteProduct, getVisibleProducts } from 
 class ProductList extends Component {
 
     componentDidMount() {
-         this.props.fetchProducts()
-        // fetch('http://5d479f42992ea9001444c91f.mockapi.io/products')
-        // .then(res => res.json())
-        // .then((data) => {
-        //     this.setState({
-        //         products: data
-        //      })
-        // })
-        // .catch(console.log)
-
+        setInterval(() => {
+            this.props.fetchProducts()
+        }, 10000);
+         
     }
 
     updateProductDetails = (id) =>{

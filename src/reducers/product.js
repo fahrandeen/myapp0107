@@ -17,9 +17,11 @@ export const removeProduct = (id) => ({ type: PRODUCT_REMOVE, payload: id })
 
 export const fetchProducts = () => {
     return (dispatch) => {
-        dispatch(showMessage('Loading Products...'))
-        getProducts()
-            .then(products => dispatch(loadProducts(products)))
+
+            dispatch(showMessage('Loading Products...'))
+            getProducts()
+                .then(products => dispatch(loadProducts(products)))
+
     }
 }
 
@@ -73,12 +75,15 @@ export default (state = initState, action) => {
         case PRODUCT_LOAD:
             return { ...state, products: action.payload }
         case PRODUCT_REPLACE:
-            return {...state, products: state.products
-                .map(t => t.id === action.payload.id ? action.payload : t)
+            return {
+                ...state, products: state.products
+                    .map(t => t.id === action.payload.id ? action.payload : t)
             }
         case PRODUCT_REMOVE:
-            return { ...state, products: state.products
-                .filter(t => t.id !== action.payload) }
+            return {
+                ...state, products: state.products
+                    .filter(t => t.id !== action.payload)
+            }
         default:
             return state
     }
