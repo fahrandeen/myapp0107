@@ -9,6 +9,7 @@ class ProductList extends Component {
 
     componentDidMount() {
         setInterval(() => {
+            console.log('auto loading')
             this.props.fetchProducts()
         }, 10000);
          
